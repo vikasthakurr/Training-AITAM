@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Personal information</legend>
+        <label for="name">First Name:</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your first name"
+          id="name"
+        />
+        <br />
+        <br />
+        <label for="name">Last Name:</label>
+        <input type="text" name="name" placeholder="Enter your last name" />
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter your email" />
+        <br />
+        <br />
+
+        <input type="submit" value="Submit" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Education section</legend>
+        <label for="degree">Degree:</label>
+        <input type="text" name="degree" placeholder="Enter your degree" />
+        <br /><br />
+        <label for="degree">Institute:</label>
+        <input
+          type="text"
+          name="institute"
+          placeholder="Enter your institute"
+        />
+      </fieldset>
+      <br /><br />
+
+      <!-- textarea to take multiline input from user -->
+      <textarea name="" id="" placeholder="enter your feedback..."></textarea>
+
+      <!-- button method -->
+      <input type="submit" value="Submit" />
+      <button>click here to submit</button>
+
+      <br /><br /><br />
+      <!-- how to make dropdown -->
+      <!-- using select and option element -->
+
+      <select name="country">
+        <option value="us">US</option>
+        <option value="uk">UK</option>
+        <option value="india">India</option>
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+      </select>
+
+      <br><br>
+
+
+      <!-- optgroup to categorize options -->
+       <select name="vehicles">
+        <optgroup label="cars">
+            <option value="swift">swift</option>
+            <option value="alto">alto</option>
+        </optgroup>
+        <optgroup label="bikes">
+            <option value="pulsar">pulsar</option>
+            <option value="apache">apache</option>
+
+        </optgroup>
+        <optgroup label="truck">
+            <option value="tata">TATA pickup</option>
+            <option value="mahindra">Pickup</option>
+        </optgroup>
+       </select>
+    </form>
+  </body>
+</html>
