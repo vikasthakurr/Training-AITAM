@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex wrap</title>
+    <style>
+      /* .container {
+            display: flex;
+            flex-direction: row;
+            width: 500px;
+            height: 400px;
+            background-color: #f1f1f1;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #fff;
+        } */
+
+      /* flex-grow and flex shrink */
+
+      .container {
+        display: flex;
+        width: 500px;
+        border: 2px solid #333;
+      }
+      .boxes {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 20px;
+       
+      }
+      .box1 {
+        height: 40px;
+        width: 40px;
+        background-color: #f1c40f;
+        flex-grow: 2;
+    
+      }
+      .box2 {
+        height: 40px;
+        width: 40px;
+        background-color: #e74c3c;
+      }
+      .box3 {
+        height: 40px;
+        width: 40px;
+        background-color: #3498db;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>flex grow and shrink</h2>
+    <div class="container">
+      <div class="boxes box1">1</div>
+      <div class="boxes box2">2</div>
+      <div class="boxes box3">3</div>
+    </div>
+  </body>
+</html>
