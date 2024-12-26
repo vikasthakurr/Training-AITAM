@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(70px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+        animation: bounce 1s infinite;
+        padding: 15px;
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Jump</div>
+  </body>
+</html>
