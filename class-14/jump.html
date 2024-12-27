@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .parent {
-            border: 2px solid green;
-            height: 420px;
-        }
+      .parent {
+        border: 2px solid green;
+        height: 420px;
+      }
       .ball {
         width: 200px;
         height: 200px;
@@ -26,18 +26,13 @@
         0% {
           transform: translateY(0);
         }
-        25%{
-            transform: translateY(30px);
-            background-color: blue;
+
+        50% {
+          transform: translateY(70px);
+          background-color: red;
+
         }
-        50%{
-            transform: translateY(70px);
-            background-color: red;
-        }
-        75%{
-            transform: translateY(30px);
-            background-color: green;
-        }
+
         100% {
           transform: translateY(0);
         }
@@ -46,8 +41,7 @@
   </head>
   <body>
     <div class="parent">
-        <div class="ball">Jump</div>
+      <div class="ball">Jump</div>
     </div>
-    
   </body>
 </html>
