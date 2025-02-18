@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM DEMO</title>
+  </head>
+  <body>
+    <!-- <ul>
+      <li>AITAM</li>
+      <li>College</li>
+      <li>GFG</li>
+    </ul> -->
+
+
+    <!-- <script>
+      let list = document.querySelectorAll("li");
+      console.log(list.length);
+
+      list.forEach((item)=>{
+        item.style.color= "green";
+        item.style.fontSize= "20px"; 
+      } )
+    </script> -->
+
+
+
+    <!-- <p id="demo">Hello world</p>
+
+    <script>
+      let paragraph =document.getElementById("demo");
+      paragraph.innerHTML = "hii  world";
+      paragraph.style.color = "blue";
+    </script> -->
+
+
+    <!-- <ul id="list">
+
+
+    </ul>
+
+
+    <script>
+      let list = document.getElementById("list");
+
+      let newLi= document.createElement("li");
+      newLi.innerHTML = "AITAM college";
+
+      list.appendChild(newLi);
+    </script> -->
+
+
+    <!-- remove a element from the list -->
+     <!-- <ul id="list">
+      <li id="item">AITAM</li>
+     </ul>
+
+
+     <script>
+      const List = document.getElementById("list");
+      const item = document.getElementById("item");
+
+      list.removeChild(item);
+     </script> -->
+
+
+     <button id="deletebtn">Click to Delete</button>
+
+
+     <script>
+      const deletebtn = document.getElementById("deletebtn");
+      deletebtn.addEventListener("click", () =>{
+        // deletebtn.remove();
+        alert("btn is clicked");
+      })
+     </script>
+
+
+
+  </body>
+</html>
