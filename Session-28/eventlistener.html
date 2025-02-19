@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1>hello</h1>
+    <button id="clickBtn">click me</button> -->
+
+    <!-- <script>
+      // Element.addeventListener(eventName, callbackFunction);
+      //common events
+      // click
+      // mouseover
+      // mouseout
+      // mousemove
+      // mouseenter
+      // mouseleave
+      //keydown
+      //keyup
+      //focus
+      //blur
+      //scroll
+      //input
+      //change
+      //submit
+      //load
+      //resize
+      //error
+
+      const clickBtn = document.getElementById("clickBtn");
+      clickBtn.addEventListener("click", () => {
+        alert("button is clicked");
+      });
+    </script> -->
+
+    <!-- <h2>mouseover event</h2>
+    <div id="hoverBox">hover over me</div>
+
+    <script>
+      const hoverBox = document.getElementById("hoverBox");
+      hoverBox.addEventListener("mouseover", () => {
+        hoverBox.style.backgroundColor = "red";
+      });
+
+      hoverBox.addEventListener("mouseout", () => {
+        hoverBox.style.backgroundColor = "green";
+      });
+    </script> -->
+
+    <!-- <h2>keydown events</h2>
+    <p>press any key</p>
+
+    <p id="output">Key Pressed:</p>
+
+    <script>
+      const output = document.getElementById("output");
+
+      document.addEventListener("keydown", () => {
+        output.textContent = "Key Pressed: " + event.key;
+        alert("key is pressed:" + event.key);
+      });
+    </script> -->
+
+    <!-- <h2>submit event</h2>
+    <form id="myform">
+      <label for="username">Enter your username:</label>
+      <input type="text" id="username" name="username" required />
+      <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <script>
+      const form = document.getElementById("myform");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault(); //prevent reloading of page.....
+        alert(`form submit with details like : ${form.username.value}`);
+      });
+    </script> -->
+
+    <h2>event remove example</h2>
+    <button id="removeBtn">Click me</button>
+    <button id="stopBtn">Stop event</button>
+
+    <script>
+      const removeBtn = document.getElementById("removeBtn");
+      const stopBtn = document.getElementById("stopBtn");
+
+      function handleClick() {
+        alert("button has been clicked");
+      }
+      removeBtn.addEventListener("click", handleClick);
+      stopBtn.addEventListener("click", () => {
+        removeBtn.removeEventListener("click", handleClick);
+        alert("event has been removed");
+      });
+    </script>
+  </body>
+</html>
