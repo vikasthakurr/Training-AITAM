@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>local and session storage</h1>
+
+    <script>
+      //     //storing the data into local storage
+      //   localStorage.setItem("name", "Vikas");
+      //   localStorage.setItem("age", 25);
+      //   localStorage.setItem("city", "Delhi");
+
+      //   //retrieving the data from local storage
+
+      //   const name = localStorage.getItem("name");
+      //   console.log(name);
+
+      //   //remove item from local storage
+
+      //   localStorage.removeItem("city");
+      //   const city = localStorage.getItem("city");
+      //   console.log(city);
+
+      const details = {
+        name: "Vikas",
+        age: 25,
+        city: "Delhi",
+        salary: 50000,
+      };
+
+      sessionStorage.setItem("details", JSON.stringify(details));
+      const userdetails = JSON.parse(localStorage.getItem("details"));
+      console.log(userdetails);
+    </script>
+  </body>
+</html>
